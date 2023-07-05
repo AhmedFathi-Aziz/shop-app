@@ -29,7 +29,7 @@ git clone https://github.com/AhmedFathi-Aziz/shop-app.git
 2. Install the depenedencies:
 
 ```
-cd simple-shop-nodejs
+cd shop-app
 npm install
 ```
 
