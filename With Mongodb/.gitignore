@@ -1,0 +1,6 @@
+.env
+server.cert
+server.key
+images
+node_modules
+notes
