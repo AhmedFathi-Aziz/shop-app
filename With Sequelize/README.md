@@ -30,6 +30,7 @@ git clone https://github.com/AhmedFathi-Aziz/shop-app.git
 
 ```
 cd shop-app
+cd With\ Sequelize
 npm install
 ```
 
