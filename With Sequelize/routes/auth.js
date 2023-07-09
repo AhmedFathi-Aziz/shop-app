@@ -33,10 +33,6 @@ router.post(
             .isEmail()
             .withMessage('Please enter a valid email address.')
             .custom((value, { req }) => {
-                // if (value === 'admin@admin.com') {
-                //     throw new Error('This email address is forbidden');
-                // }
-                // return true;
                 return User.findOne({ where: { email: value } })
                     .then(user => {
                         if (user) {

@@ -303,20 +303,6 @@ exports.getInvoice = (req, res, next) => {
       pdfdoc.text('-----------------------');
       pdfdoc.text(`Total price: $ ${totalPrice}`);
       pdfdoc.end();
-
-      // fs.readFile(invoicePath, (err, data) => {
-      //   if (err) {
-      //     console.log('Data not found!');
-      //     return next(err);
-      //   }
-      //   res.setHeader('Content-Type', 'application/pdf');
-      //   res.setHeader('Content-Disposition', 'attachment; filename="' + invoiceName + '"');
-      //   res.send(data);
-      //   res.end();
-      // });
-
-      // const file = fs.createReadStream(invoicePath);
-      // file.pipe(res);
     })
     .catch(err => {
       return next(err);

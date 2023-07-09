@@ -227,10 +227,6 @@ exports.getNewPassword = (req, res, next) => {
   User
     .findOne({ resetToken: token, resetTokenExpiration: { $gt: Date.now() } })
     .then(user => {
-      // if (!user) {
-      //   console.log('not found')
-      //   return res.redirect('/reset');
-      // }
       let message = req.flash('error');
       if (message.length > 0) {
         message = message[0];
